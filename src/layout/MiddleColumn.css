@@ -1,0 +1,11 @@
+.button{
+    margin-top: 20px;
+}
+.textarea {
+    display:block;
+    margin-bottom:1em;
+    clear:both;
+    overflow: auto;
+    height: auto;
+    box-sizing: border-box;
+}

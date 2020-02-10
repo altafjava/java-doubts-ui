@@ -1,22 +1,21 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import { Button, Navbar, Nav, NavDropdown, Form, FormControl } from 'react-bootstrap'
 
 class Header extends Component {
     render() {
         return (
-            <header>
-                <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                    <div><a href="https://altafjava.blogspot.com" className="navbar-brand">AltafJava</a></div>
-                    <ul className="navbar-nav">
-                        <li className="nav-link">Home</li>
-                        <li className="nav-link">Todos</li>
-                    </ul>
-                    <ul className="navbar-nav navbar-collapse justify-content-end">
-                        <li className="nav-link">Login</li>
-                        <li className="nav-link">Logout</li>
-                    </ul>
-                </nav>
-            </header>
+            <Navbar bg="dark" variant="dark" fixed="top">
+                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                <Nav className="mr-auto">
+                    <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav.Link href="#features">Features</Nav.Link>
+                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                </Nav>
+                <Form inline>
+                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                    <Button variant="outline-info">Search</Button>
+                </Form>
+            </Navbar>
         )
     }
 }

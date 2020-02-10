@@ -6,7 +6,6 @@ import RightColumn from '../layout/RightColumn'
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
 
-
 class Main extends Component {
     render() {
         return (
@@ -15,13 +14,13 @@ class Main extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-2">
-                            <LeftColumn />
+                            {/* <LeftColumn /> */}
                         </div>
                         <div className="col-sm-8">
                             <MiddleColumn />
                         </div>
                         <div className="col-sm-2">
-                            <RightColumn />
+                            {/* <RightColumn /> */}
                         </div>
                     </div>
                 </div>
